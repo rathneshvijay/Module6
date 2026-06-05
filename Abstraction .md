@@ -29,44 +29,42 @@ To create an **abstract class** named `Shape` with an **abstract method** `calcu
 ---
 
 ## 💻 Program
-from abc import ABC
-class type_shape(ABC): 
-    def area(self):
+from abc import ABC, abstractmethod
+import math
+
+class Shape(ABC):
+    @abstractmethod
+    def calculate_area(self):
         pass
 
-class Rectangle(type_shape):
-    length = 6
-    breadth = 4
-    def area(self):
-        return self.length * self.breadth
+class Rectangle(Shape):
+    def __init__(self, length=5, breadth=3):
+        self.length = length
+        self.breadth = breadth
 
-class Circle(type_shape):
-    radius = 7
-    def area(self):
-        return 3.14*self.radius**2
-class Square(type_shape):
-    length = 4
-    def area(self):
-        return self.length**2
+    def calculate_area(self):
+        area = self.length * self.breadth
+        print(f"Area of Rectangle: {area}")
 
-class triangle(type_shape):
-    length = 5
-    width = 4
-    def area(self):
-        return 0.5*self.length*self.width
-  
-r = Rectangle()
-c = Circle() 
-s = Square() 
-t = triangle() 
-print("Area of a rectangle:", r.area())
-print("Area of a circle:", c.area()) 
-print("Area of a square:", s.area()) 
-print("Area of a triangle:", t.area())
+class Circle(Shape):
+    def __init__(self, radius=4):
+        self.radius = radius
+
+    def calculate_area(self):
+        area = math.pi * self.radius ** 2
+        print(f"Area of Circle: {area:.2f}")
+
+rect = Rectangle()
+circ = Circle()
+
+rect.calculate_area()
+circ.calculate_area()
 
 ## Output
-<img width="814" height="404" alt="image" src="https://github.com/user-attachments/assets/9d7008cc-2881-428e-965e-4e6382cddcc9" />
+<img width="1919" height="680" alt="image" src="https://github.com/user-attachments/assets/a3818c75-b793-434f-92c0-e4ac15f6572b" />
+
 
 ## Result
-Thus the program to create an abstract class named Shape with an abstract method calculate_area, and implement this method in two subclasses: Rectangle and Circle is executed successfully.
+The given program is executed successfully.
+
 
