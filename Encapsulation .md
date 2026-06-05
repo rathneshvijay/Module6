@@ -35,7 +35,7 @@ r = Rectangle(10, 5)
 ---
 
 ## Output
-<img width="1919" height="680" alt="image" src="https://github.com/user-attachments/assets/2dcf50b4-f761-44ca-949b-843e823f0a14" />
+<img width="1913" height="466" alt="image" src="https://github.com/user-attachments/assets/a7151aad-549d-48f2-9ca1-76c03b7fddf6" />
 
 
 ## Result
