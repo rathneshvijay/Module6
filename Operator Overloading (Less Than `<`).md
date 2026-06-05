@@ -41,7 +41,7 @@ for obj in (obj_goldfish, obj_hammerhead):
     obj.type()
 ---
 ## Output
-<img width="1919" height="595" alt="image" src="https://github.com/user-attachments/assets/e183025f-bd37-4998-a3a5-9d126900a26c" />
+<img width="1907" height="579" alt="image" src="https://github.com/user-attachments/assets/ced4bf5d-a1e0-420f-a61e-da48056e42ea" />
 
 
 ## Result
